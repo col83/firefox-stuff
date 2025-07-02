@@ -258,7 +258,11 @@
         "§:avito.ru",
         "§:avito.st",
         "§:cryptostorm.is",
-        "§:quad9.net"
+        "§:quad9.net",
+        "§:photonengine.com",
+        "§:rbxcdn.com",
+        "§:roblox.com",
+        "§:online-fix.me"
       ],
       "untrusted": [],
       "custom": {}
@@ -274,7 +278,7 @@
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",
-    "uuid": ""
+    "uuid": "95918702-4d95-4343-a2dd-1091d991214c"
   },
   "sync": {
     "global": false,
