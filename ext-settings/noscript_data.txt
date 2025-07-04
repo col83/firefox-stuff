@@ -262,7 +262,17 @@
         "§:photonengine.com",
         "§:rbxcdn.com",
         "§:roblox.com",
-        "§:online-fix.me"
+        "§:online-fix.me",
+        "§:visualstudio.com",
+        "§:gfx.ms",
+        "§:azure.com",
+        "§:nuget.org",
+        "§:onlyfans.com",
+        "§:twitter.com",
+        "§:ntlite.com",
+        "§:torproject.org",
+        "gitlab.org",
+        "§:tails.net"
       ],
       "untrusted": [],
       "custom": {}
@@ -278,7 +288,7 @@
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",
-    "uuid": "95918702-4d95-4343-a2dd-1091d991214c"
+    "uuid": ""
   },
   "sync": {
     "global": false,
