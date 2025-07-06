@@ -2,7 +2,7 @@ about:config in url panel
 
 
 unsigned extensions
-xpinstall.signatures.required set to false
+xpinstall.signatures.required to false
 
 
 badbrowser.php

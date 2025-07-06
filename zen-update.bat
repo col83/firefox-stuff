@@ -1,5 +1,7 @@
 @echo off
 
+title Zen browser update
+
 set URL=https://github.com/zen-browser/desktop/releases/latest/download/zen.installer.exe
 
 cls

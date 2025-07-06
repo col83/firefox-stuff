@@ -272,7 +272,12 @@
         "§:ntlite.com",
         "§:torproject.org",
         "gitlab.org",
-        "§:tails.net"
+        "§:tails.net",
+        "§:gnu.org",
+        "§:youtube-nocookie.com",
+        "§:driveridentifier.com",
+        "§:badcaps.net",
+        "§:wagnardsoft.com"
       ],
       "untrusted": [],
       "custom": {}
