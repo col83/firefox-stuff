@@ -302,7 +302,20 @@
         "§:emojipedia.org",
         "§:bbc.com",
         "§:debian.org",
-        "§:letsencrypt.org"
+        "§:letsencrypt.org",
+        "§:grok.com",
+        "127.0.0.1",
+        "localhost",
+        "§:x.ai",
+        "§:w3schools.com",
+        "§:ngfiles.com",
+        "§:newgrounds.com",
+        "§:ungrounded.net",
+        "§:emojidb.org",
+        "§:deepseek.com",
+        "§:sublimemerge.com",
+        "§:geeksforgeeks.org",
+        "§:metanit.com"
       ],
       "untrusted": [],
       "custom": {}
