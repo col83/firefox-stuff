@@ -286,7 +286,6 @@
         "§:codebeautify.org",
         "§:searxng.org",
         "§:stackoverflow.ai",
-        "§:gismeteo.ru",
         "§:www.freedesktop.org",
         "§:kodi.tv",
         "§:huggingface.co",
@@ -315,7 +314,18 @@
         "§:deepseek.com",
         "§:sublimemerge.com",
         "§:geeksforgeeks.org",
-        "§:metanit.com"
+        "§:metanit.com",
+        "§:hashcat.net",
+        "§:tshark.dev",
+        "§:pkgs.org",
+        "§:wireshark.org",
+        "§:npcap.com",
+        "§:nightly.link",
+        "§:fontsquirrel.com",
+        "§:alpinelinux.org",
+        "§:fabricmc.net",
+        "§:adoptium.net",
+        "§:gismeteo.ru"
       ],
       "untrusted": [],
       "custom": {}
