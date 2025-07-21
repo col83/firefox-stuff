@@ -325,7 +325,8 @@
         "§:alpinelinux.org",
         "§:fabricmc.net",
         "§:adoptium.net",
-        "§:gismeteo.ru"
+        "§:gismeteo.ru",
+        "§:ip-api.com"
       ],
       "untrusted": [],
       "custom": {}
