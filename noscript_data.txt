@@ -326,7 +326,16 @@
         "§:fabricmc.net",
         "§:adoptium.net",
         "§:gismeteo.ru",
-        "§:ip-api.com"
+        "§:ip-api.com",
+        "§:firefox.com",
+        "§:element.io",
+        "§:steamgriddb.com",
+        "§:waifu2x.net",
+        "§:pixiv.net",
+        "§:pximg.net",
+        "§:gitkraken.com",
+        "§:convertio.co",
+        "§:cmdx.dev"
       ],
       "untrusted": [],
       "custom": {}
