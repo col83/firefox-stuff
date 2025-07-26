@@ -13,17 +13,20 @@ services.sync.prefs.sync.extensions.update.enabled
 ```
 to false
 
+
 ## allow unsigned extensions
 ```
 xpinstall.signatures.required
 ```
 to false
 
+
 ## badbrowser.php fix
 ```
 accessibility.blockautorefresh
 ```
 to true
+
 
 ## disable webrtc (for privacy in some cases)
 ```
