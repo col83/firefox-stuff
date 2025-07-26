@@ -6,7 +6,7 @@ about:config (type in url panel)
 ```
 extensions.update.enabled
 ```
-to false
+
 
 ```
 services.sync.prefs.sync.extensions.update.enabled
