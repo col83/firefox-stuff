@@ -335,7 +335,16 @@
         "§:pximg.net",
         "§:gitkraken.com",
         "§:convertio.co",
-        "§:cmdx.dev"
+        "§:cmdx.dev",
+        "§:libretranslate.com",
+        "§:z.ai",
+        "§:chatglm.cn",
+        "§:majorgeeks.com",
+        "§:sharethis.com",
+        "§:dencode.com",
+        "§:oracle.com",
+        "§:githubcopilot.com",
+        "§:markdownlivepreview.dev"
       ],
       "untrusted": [],
       "custom": {}
