@@ -5,10 +5,6 @@ about:config (type in url panel)
 ## disable extensions auto-updates
 ```
 extensions.update.enabled
-```
-
-
-```
 services.sync.prefs.sync.extensions.update.enabled
 ```
 to false
