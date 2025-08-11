@@ -2,29 +2,31 @@
 
 about:config (type in url panel)
 
-## disable extensions auto-updates
+### disable extensions auto-updates
 ```
 extensions.update.enabled
+```
+```
 services.sync.prefs.sync.extensions.update.enabled
 ```
 to false
 
 
-## allow unsigned extensions
+### allow unsigned extensions
 ```
 xpinstall.signatures.required
 ```
 to false
 
 
-## badbrowser.php fix
+### badbrowser.php fix
 ```
 accessibility.blockautorefresh
 ```
 to true
 
 
-## disable webrtc (for privacy in some cases)
+### disable webrtc (for privacy in some cases)
 ```
 media.peerconnection.enabled
 ```

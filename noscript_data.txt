@@ -377,7 +377,10 @@
         "§:9to5google.com",
         "§:digitalfoundry.net",
         "§:samsung.com",
-        "§:blackmagicdesign.com"
+        "§:blackmagicdesign.com",
+        "§:securitylab.ru",
+        "§:mega.io",
+        "§:mega.co.nz"
       ],
       "untrusted": [],
       "custom": {}
