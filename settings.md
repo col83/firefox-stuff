@@ -24,6 +24,10 @@ to false
 accessibility.blockautorefresh
 ```
 to true
+```
+services.sync.prefs.sync.accessibility.blockautorefresh
+```
+to false
 
 
 ### disable webrtc (for privacy in some cases)
