@@ -1,0 +1,221 @@
+{
+  "policies": {
+	"ExtensionSettings": {
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.69.1b4/uBlock0_1.69.1b4.firefox.signed.xpi",
+		"private_browsing": ""
+      },
+      "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4712735/noscript-13.6.6.xpi",
+		"private_browsing": ""
+      },
+      "sponsorBlockerBETA@ajay.app": {
+        "installation_mode": "force_installed",
+        "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.2/FirefoxSignedInstaller.xpi",
+		"private_browsing": ""
+      },
+      "idcac-pub@guus.ninja": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4637154/istilldontcareaboutcookies-1.1.9.xpi",
+		"private_browsing": ""
+      }
+    },
+	"ExtensionUpdate": false,
+	"SanitizeOnShutdown": {
+		"Cache": true,
+		"Cookies": true,
+		"FormData": false,
+		"History": false,
+		"Sessions": false,
+		"SiteSettings": true,
+		"Locked": true
+	},
+	"GenerativeAI": {
+    "Enabled": false,
+    "Chatbot": false,
+    "LinkPreviews": false,
+    "TabGroups": false,
+    "Locked": true
+    },
+  "Cookies": {
+		"Behavior": "reject-tracker-and-partition-foreign",
+			"Allow": [
+				"https://4pda.to",
+        "https://apple.com",
+        "https://archlinux.org",
+        "https://boosty.to",
+        "https://curseforge.com",
+        "https://chatgpt.com",
+        "https://duckduckgo.com",
+        "https://github.com",
+        "https://gitlab.com",
+        "https://gog.com",
+        "https://google.com",
+        "https://grok.com",
+        "https://ko-fi.com",
+        "https://mod.pub",
+        "https://modrinth.com",
+        "https://nexusmods.com",
+        "https://patreon.com",
+        "https://rutracker.org",
+        "https://proton.me",
+        "https://soundcloud.com",
+        "https://spotify.com",
+        "https://steampowered.com",
+        "https://twitch.tv",
+        "https://xda-developers.com",
+        "https://x.ai",
+        "https://x.com",
+        "https://youtube.com",
+        "https://z.ai"
+      ],
+      "Locked": true
+    },
+	"Homepage": {
+      "URL": "https://github.com/search?q=&type=repositories",
+      "Locked": true,
+      "StartPage": "none"
+    },
+	"SearchEngines": {
+	"PreventInstalls": false,
+	"Default": "DuckDuckGo",
+	"Add": [
+    {
+      "Name": "Youtube",
+      "URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}",
+      "Method": "GET",
+      "IconURL": "https://www.youtube.com/favicon.ico",
+      "Alias": "@yt",
+      "Description": "Youtube Search",
+      "PostData": "",
+      "SuggestURLTemplate": ""
+    },
+    {
+      "Name": "Arch Linux packages search",
+      "URLTemplate": "https://archlinux.org/packages/?sort=-last_update&q={searchTerms}&maintainer=&flagged=",
+      "Method": "GET",
+      "IconURL": "https://archlinux.org/favicon.ico",
+      "Alias": "@aps",
+      "Description": "Search packages via Arch Linux repository",
+      "PostData": "",
+      "SuggestURLTemplate": ""
+    },
+    {
+      "Name": "Github",
+      "URLTemplate": "https://github.com/search?q={searchTerms}&type=repositories",
+      "Method": "GET",
+      "IconURL": "https://github.com/favicon.ico",
+      "Alias": "@gh",
+      "Description": "Github search",
+      "PostData": "",
+      "SuggestURLTemplate": ""
+    }
+	]
+	},
+	"UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false,
+      "FirefoxLabs": false,
+      "Locked": true
+    },
+	"FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "Stories": false,
+      "SponsoredPocket": false,
+      "SponsoredStories": false,
+      "Locked": true
+    },
+	"FirefoxSuggest": {
+      "WebSuggestions": true,
+      "SponsoredSuggestions": false,
+      "ImproveSuggest": false,
+      "Locked": true
+    },
+	"NoDefaultBookmarks": true,
+	"DisableFirefoxStudies": true,
+	"HttpsOnlyMode": "force_enabled",
+	"HttpAllowlist": ["http://httpforever.com/"],
+	"PromptForDownloadLocation": true,
+	"DontCheckDefaultBrowser": true,
+	"DisableTelemetry": true,
+  "DisableAppUpdate": true,
+	"BackgroundAppUpdate": false,
+	"ManualAppUpdateOnly": true,
+	"DisableFirefoxAccounts": true,
+	"WindowsSSO": false,
+	"PasswordManagerEnabled": false,
+	"Permissions": {
+      "Camera": {
+        "Allow": ["https://example.com"],
+        "BlockNewRequests": false,
+        "Locked": true
+      },
+      "Microphone": {
+        "Allow": ["https://example.com"],
+        "BlockNewRequests": false,
+        "Locked": true
+      },
+      "Location": {
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "Notifications": {
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "Autoplay": {
+        "Allow": ["https://bandcamp.com", "https://soundcloud.com", "https://spotify.com"],
+        "Default": "block-audio-video",
+        "Locked": true
+      },
+      "VirtualReality": {
+        "BlockNewRequests": true,
+        "Locked": true
+      },
+      "ScreenShare": {
+        "Allow": ["https://example.com"],
+        "BlockNewRequests": true,
+        "Locked": true
+      }
+    },
+	"EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "SuspectedFingerprinting": true,
+      "Category": "strict",
+      "Exceptions": ["https://example.com"],
+      "BaselineExceptions": false,
+      "ConvenienceExceptions": false
+    },
+	"Preferences": {
+		"browser.urlbar.suggest.recentsearches": {
+			"Value": false,
+			"Status": "locked"
+		},
+		"geo.enabled": {
+			"Value": false,
+			"Status": "locked"
+		},
+		"geo.prompt.open_system_prefs": {
+			"Value": false,
+			"Status": "locked"
+		},
+		"geo.provider.ms-windows-location": {
+			"Value": false,
+			"Status": "locked"
+		}
+    }
+  }
+}
