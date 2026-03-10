@@ -506,6 +506,7 @@
 				"§:tp-link.com",
 				"§:tproger.ru",
 				"§:tpucdn.com",
+				"§:translate.googleapis.com",
 				"§:translationproject.org",
 				"§:twimg.com",
 				"§:twitch.tv",
