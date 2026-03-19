@@ -3,7 +3,7 @@
 	"ExtensionSettings": {
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.69.1b4/uBlock0_1.69.1b4.firefox.signed.xpi",
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.70.0/uBlock0_1.70.0.firefox.signed.xpi",
 		"private_browsing": ""
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
@@ -152,6 +152,7 @@
 	"ManualAppUpdateOnly": true,
 	"DisableFirefoxAccounts": true,
 	"WindowsSSO": false,
+	"DisableRemoteImprovements": true,
 	"PasswordManagerEnabled": false,
 	"Permissions": {
       "Camera": {
