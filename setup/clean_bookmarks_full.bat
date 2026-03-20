@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy Bypass -File "clean_bookmarks_full.ps1" "bookmarks.html"

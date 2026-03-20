@@ -152,7 +152,6 @@
 	"ManualAppUpdateOnly": true,
 	"DisableFirefoxAccounts": true,
 	"WindowsSSO": false,
-	"DisableRemoteImprovements": true,
 	"PasswordManagerEnabled": false,
 	"Permissions": {
       "Camera": {
