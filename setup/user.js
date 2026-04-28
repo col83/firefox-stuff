@@ -40,6 +40,8 @@ user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.chat.menu", false);
 user_pref("browser.tabs.groups.smart.enabled", false);
 user_pref("browser.ml.linkPreview.enabled", false);
+user_pref("browser.ml.modelHubRootUrl", "");
+user_pref("browser.newtabpage.activity-stream.discoverystream.personalization.modelKeys", "");
 
 // Extensions button
 user_pref("extensions.unifiedExtensions.button.always_visible", false);
@@ -59,6 +61,9 @@ user_pref("services.sync.prefs.sync.accessibility.blockautorefresh", false);
 
 // Normandy/Shield: Disable studies and experiments.
 user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.api_url", "");
+user_pref("app.normandy.user_id", "");
 
 // -----------------------------------------------------------------
 // browser
@@ -77,6 +82,8 @@ user_pref("network.predictor.enabled", true);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
+
+user_pref("browser.newtabpage.activity-stream.impressionId", "");
 
 // New Tab Page: Disable Activity Stream (the default new tab page).
 user_pref("browser.newtabpage.enabled", false);
@@ -117,28 +124,19 @@ user_pref("browser.startup.homepage", "chrome://browser/content/blanktab.html");
 // UI: Hide experimental options in the settings menu.
 user_pref("browser.preferences.experimental.hidden", true);
 
-// Downloads: Always ask what to do with new file types.
+// Downloads settings
 user_pref("browser.download.always_ask_before_handling_new_types", true);
-
-// Downloads: Delete downloaded files from private browsing.
+user_pref("browser.download.lastDir", "");
 user_pref("browser.download.deletePrivate", true);
-
-// Downloads: Do not use the system's default download folder.
 user_pref("browser.download.useDownloadDir", false);
-
-//
 user_pref("services.sync.prefs.sync.browser.download.useDownloadDir", false);
+user_pref("browser.download.panel.shown", true);
 
 //
 user_pref("extensions.getAddons.cache.enabled", false);
 
 //
 user_pref("network.connectivity-service.enabled", false);
-
-//
-user_pref("app.shield.optoutstudies.enabled", false);
-user_pref("app.normandy.enabled", false);
-user_pref("app.normandy.api_url", "");
 
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);

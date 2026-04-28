@@ -4,22 +4,27 @@
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://github.com/gorhill/uBlock/releases/download/1.70.0/uBlock0_1.70.0.firefox.signed.xpi",
-		"private_browsing": ""
+				"private_browsing": ""
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4712735/noscript-13.6.6.xpi",
-		"private_browsing": ""
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4741732/noscript-13.6.13.xpi",
+				"private_browsing": ""
+      },
+			"{6c00218c-707a-4977-84cf-36df1cef310f}": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4516988/port_authority-2.2.0.xpi",
+				"private_browsing": ""
       },
       "sponsorBlockerBETA@ajay.app": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.2/FirefoxSignedInstaller.xpi",
-		"private_browsing": ""
+        "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.5/FirefoxSignedInstaller.xpi",
+				"private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4637154/istilldontcareaboutcookies-1.1.9.xpi",
-		"private_browsing": ""
+				"private_browsing": ""
       }
     },
 	"ExtensionUpdate": false,
@@ -45,8 +50,6 @@
 				"https://4pda.to",
         "https://apple.com",
         "https://archlinux.org",
-        "https://boosty.to",
-        "https://curseforge.com",
         "https://chatgpt.com",
         "https://duckduckgo.com",
         "https://github.com",
@@ -55,8 +58,6 @@
         "https://google.com",
         "https://grok.com",
         "https://ko-fi.com",
-        "https://mod.pub",
-        "https://modrinth.com",
         "https://nexusmods.com",
         "https://patreon.com",
         "https://rutracker.org",
@@ -178,6 +179,7 @@
         "Locked": true
       },
       "VirtualReality": {
+				"Allow": ["https://example.com"],
         "BlockNewRequests": true,
         "Locked": true
       },
@@ -200,6 +202,18 @@
       "ConvenienceExceptions": false
     },
 	"Preferences": {
+		"browser.download.useDownloadDir": {
+			"Value": false,
+			"Status": "locked"
+		},
+		"browser.download.panel.shown": {
+			"Value": true,
+			"Status": "locked"
+		},
+		"browser.download.lastDir": {
+			"Value": "",
+			"Status": "locked"
+		},
 		"browser.urlbar.suggest.recentsearches": {
 			"Value": false,
 			"Status": "locked"
