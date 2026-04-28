@@ -1,0 +1,1 @@
+explorer.exe "%USERPROFILE%\AppData\Roaming\Mozilla\Firefox\Profiles"

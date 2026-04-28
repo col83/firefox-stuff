@@ -1,0 +1,1 @@
+explorer.exe "%PROGRAMFILES%\Mozilla Firefox\"
