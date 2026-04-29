@@ -141,6 +141,7 @@
 				"§:couchsurfing.com",
 				"§:coveo.com",
 				"§:crateentertainment.com",
+				"§:crates.io",
 				"§:crdroid.net",
 				"§:crowdin.com",
 				"§:crunchyroll.com",
