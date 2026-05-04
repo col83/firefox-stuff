@@ -16,4 +16,4 @@ $cleanContent = [regex]::Replace($content, '(?i)(<A\b[^>]+>)', {
     return $match.Groups[1].Value -replace '\s+(ICON_URI|ICON)="[^"]*"', ''
 })
 
-Set-Content $FilePath -Value $cleanContent -Encoding UTF8
+Set-Content $FilePath -Value $cleanContent

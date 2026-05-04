@@ -16,4 +16,4 @@ $cleanContent = [regex]::Replace($content, '(?i)(<(?:A|H3|DT)\b[^>]+>)', {
     return $match.Groups[1].Value -replace '\s+(ADD_DATE|LAST_MODIFIED|ICON_URI|ICON)="[^"]*"', ''
 })
 
-Set-Content $FilePath -Value $cleanContent -Encoding UTF8
+Set-Content $FilePath -Value $cleanContent

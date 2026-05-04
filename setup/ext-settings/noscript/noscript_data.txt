@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.13",
+    "version": "13.6.16",
     "knownCapabilities": [
       "script",
       "object",
@@ -22,7 +22,6 @@
     "DEFAULT": {
       "capabilities": [
         "frame",
-        "fetch",
         "noscript",
         "other"
       ],
@@ -206,6 +205,7 @@
 				"§:getmonero.org",
 				"§:getpaint.net",
 				"§:gimp.org",
+				"§:git-cliff.org",
 				"§:gitbook.com",
 				"§:gitee.com",
 				"§:github.blog",
@@ -288,6 +288,7 @@
 				"§:keepassxc.org",
 				"§:kernel.org",
 				"§:kernelnewbies.org",
+				"§:kernelsu.org",
 				"§:kioxia.com",
 				"§:ko-fi.com",
 				"§:kodi.tv",
@@ -326,6 +327,7 @@
 				"§:mikrotik.com",
 				"§:minecraft.net",
 				"§:miui.com",
+				"§:mmrl.dev",
 				"§:modding.wiki",
 				"§:moddinglinked.com",
 				"§:modrinth.com",
@@ -418,6 +420,7 @@
 				"§:pkgs.org",
 				"§:playstation.com",
 				"§:pling.com",
+				"§:pochta.ru",
 				"§:podman.io",
 				"§:poecdn.com",
 				"§:pornhub.com",
@@ -576,6 +579,10 @@
     },
     "enforced": true,
     "autoAllowTop": false
+  },
+  "contextStore": {
+    "enabled": false,
+    "policies": {}
   },
   "local": {
     "debug": true,
