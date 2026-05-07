@@ -49,6 +49,8 @@
     },
     "sites": {
       "trusted": [
+				"§:2ip.io",
+				"§:2ip.ru",
 				"§:4pda.to",
 				"§:9to5google.com",
 				"§:9to5linux.com",
