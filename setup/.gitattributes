@@ -1,6 +1,7 @@
 # Auto detect text files and perform LF or CRLF normalization
 
 .gitattributes text eol=lf
+.gitignore text eol=lf
 
 *.sh text eol=lf
 
@@ -8,4 +9,6 @@
 *.cmd text eol=crlf
 *.ps1 text eol=crlf
 
-bookmarks.* text eol=lf
+*.md text eol=lf
+
+*.html text eol=lf
