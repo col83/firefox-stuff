@@ -22,8 +22,7 @@
     "DEFAULT": {
       "capabilities": [
         "frame",
-        "noscript",
-        "other"
+        "noscript"
       ],
       "temp": false
     },
@@ -70,11 +69,13 @@
         "§:android.com",
         "§:androidauthority.com",
         "§:anthropic.com",
+        "§:apatch.dev",
         "§:api.aws",
         "§:api.hf.space",
         "§:apilevels.com",
         "§:appimage.org",
         "§:apple.com",
+        "§:appmifile.com",
         "§:apptainer.org",
         "§:appveyor.com",
         "§:archipelago.gg",
@@ -326,6 +327,7 @@
         "§:mercurial-scm.org",
         "§:mesa3d.org",
         "§:metanit.com",
+        "§:mi-img.com",
         "§:mi.com",
         "§:microsoft.com",
         "§:mikrotik.com",
@@ -497,6 +499,7 @@
         "§:time.is",
         "§:tldr.sh",
         "§:tomshardware.com",
+        "§:torproject.org",
         "§:tp-link.com",
         "§:tpucdn.com",
         "§:translate.googleapis.com",
@@ -548,6 +551,7 @@
         "§:xda-developers.com",
         "§:xdaforums.com",
         "§:xdaimages.com",
+        "§:xiaomi.com",
         "§:xmpp.net",
         "§:xmpp.org",
         "§:xnview.com",
@@ -566,6 +570,7 @@
       "untrusted": [
         "cookielaw.org",
         "doubleclick.net",
+        "firebase.googleapis.com"
         "firebaseinstallations.googleapis.com",
         "firebaseremoteconfig.googleapis.com",
         "google-analytics.com",
