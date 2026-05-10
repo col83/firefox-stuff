@@ -570,7 +570,7 @@
       "untrusted": [
         "cookielaw.org",
         "doubleclick.net",
-        "firebase.googleapis.com"
+        "firebase.googleapis.com",
         "firebaseinstallations.googleapis.com",
         "firebaseremoteconfig.googleapis.com",
         "google-analytics.com",
