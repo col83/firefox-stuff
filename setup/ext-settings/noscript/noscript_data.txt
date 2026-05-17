@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.16",
+    "version": "13.6.19",
     "knownCapabilities": [
       "script",
       "object",
@@ -36,9 +36,7 @@
         "wasm",
         "webgl",
         "fetch",
-        "noscript",
-        "unchecked_css",
-        "other"
+        "noscript"
       ],
       "temp": false
     },
@@ -488,6 +486,7 @@
         "§:tauri.app",
         "§:technodeus.ru",
         "§:techpowerup.com",
+        "§:techradar.com",
         "§:telegram.org",
         "§:telesco.pe",
         "§:tenforums.com",
@@ -552,6 +551,7 @@
         "§:xdaforums.com",
         "§:xdaimages.com",
         "§:xiaomi.com",
+        "§:xmfirmwareupdater.com",
         "§:xmpp.net",
         "§:xmpp.org",
         "§:xnview.com",
@@ -605,8 +605,8 @@
     "xss": true,
     "TabGuardMode": "off",
     "TabGuardPrompt": "post",
-    "cascadePermissions": false,
-    "cascadeRestrictions": false,
+    "cascadePermissions": true,
+    "cascadeRestrictions": true,
     "overrideTorBrowserPolicy": false,
     "storage": "sync"
   },

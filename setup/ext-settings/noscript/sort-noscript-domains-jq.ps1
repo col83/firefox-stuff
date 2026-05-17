@@ -46,7 +46,6 @@ if (-not $jqPath) {
     Write-Host ""
     Write-Host "Error: jq.exe not found." -ForegroundColor Red
     Write-Host "Please download jq.exe and place it in the script folder or system PATH."
-    Write-Host ""
     exit 1
 }
 
