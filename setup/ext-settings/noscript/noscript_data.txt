@@ -108,6 +108,7 @@
         "§:booking.com",
         "§:boosty.to",
         "§:bootstrapcdn.com",
+        "§:broadcom.com",
         "§:browserbench.org",
         "§:browserleaks.com",
         "§:bsky.app",
