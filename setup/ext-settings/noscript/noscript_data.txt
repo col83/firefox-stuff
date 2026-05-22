@@ -413,6 +413,7 @@
         "§:phoronix.com",
         "§:photonengine.com",
         "§:pi-hole.net",
+        "§:ping.pe",
         "§:pinimg.com",
         "§:pinterest.com",
         "§:pixiv.net",
