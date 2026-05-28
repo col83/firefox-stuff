@@ -36,7 +36,8 @@
         "wasm",
         "webgl",
         "fetch",
-        "noscript"
+        "noscript",
+        "unchecked_css"
       ],
       "temp": false
     },
