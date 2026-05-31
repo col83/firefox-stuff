@@ -545,6 +545,7 @@
         "§:wikipedia.org",
         "§:window-swap.com",
         "§:windowsforum.com",
+        "§:winehq.org",
         "§:wireshark.org",
         "§:wiresock.net",
         "§:wordpress.com",

@@ -53,14 +53,11 @@
         "https://duckduckgo.com",
         "https://github.com",
         "https://google.com",
-        "https://grok.com",
         "https://nexusmods.com",
         "https://proton.me",
         "https://soundcloud.com",
         "https://spotify.com",
         "https://xda-developers.com",
-        "https://x.ai",
-        "https://x.com",
         "https://z.ai"
       ],
       "Locked": true
@@ -101,6 +98,16 @@
       "IconURL": "https://github.com/favicon.ico",
       "Alias": "@gh",
       "Description": "Github search",
+      "PostData": "",
+      "SuggestURLTemplate": ""
+    },
+    {
+      "Name": "Steam",
+      "URLTemplate": "https://store.steampowered.com/search?term={searchTerms}",
+      "Method": "GET",
+      "IconURL": "https://store.steampowered.com/favicon.ico",
+      "Alias": "@steam",
+      "Description": "Steam search",
       "PostData": "",
       "SuggestURLTemplate": ""
     }
