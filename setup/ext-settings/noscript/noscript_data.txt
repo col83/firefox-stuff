@@ -136,6 +136,7 @@
         "§:cloudflarestream.com",
         "§:cloudfront.net",
         "§:codeberg.org",
+        "§:codelinaro.org",
         "§:consultant.ru",
         "§:continuwuity.org",
         "§:coredns.io",
