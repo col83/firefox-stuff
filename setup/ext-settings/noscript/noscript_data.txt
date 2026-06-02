@@ -567,6 +567,7 @@
         "§:youtu.be",
         "§:youtube-nocookie.com",
         "§:youtube.com",
+        "§:ysap.sh",
         "§:ytimg.com",
         "§:z.ai",
         "§:zed.dev",
