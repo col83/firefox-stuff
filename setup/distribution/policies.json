@@ -4,40 +4,40 @@
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://github.com/gorhill/uBlock/releases/download/1.71.0/uBlock0_1.71.0.firefox.signed.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4794904/noscript-13.6.19.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
-			"{6c00218c-707a-4977-84cf-36df1cef310f}": {
+      "{6c00218c-707a-4977-84cf-36df1cef310f}": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4516988/port_authority-2.2.0.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4637154/istilldontcareaboutcookies-1.1.9.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
       "sponsorBlockerBETA@ajay.app": {
         "installation_mode": "force_installed",
         "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.5/FirefoxSignedInstaller.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       }
     },
-	"ExtensionUpdate": false,
-	"SanitizeOnShutdown": {
-		"Cache": true,
-		"Cookies": true,
-		"FormData": false,
-		"History": false,
-		"Sessions": false,
-		"SiteSettings": true,
-		"Locked": true
+  "ExtensionUpdate": false,
+  "SanitizeOnShutdown": {
+    "Cache": true,
+    "Cookies": true,
+    "FormData": false,
+    "History": false,
+    "Sessions": false,
+    "SiteSettings": true,
+    "Locked": true
 	},
-	"GenerativeAI": {
+  "GenerativeAI": {
     "Enabled": false,
     "Chatbot": false,
     "LinkPreviews": false,
@@ -45,11 +45,10 @@
     "Locked": true
     },
   "Cookies": {
-		"Behavior": "reject-tracker-and-partition-foreign",
-			"Allow": [
-				"https://4pda.to",
+    "Behavior": "reject-tracker-and-partition-foreign",
+      "Allow": [
+        "https://4pda.to",
         "https://archlinux.org",
-        "https://chatgpt.com",
         "https://duckduckgo.com",
         "https://github.com",
         "https://google.com",
@@ -57,15 +56,14 @@
         "https://proton.me",
         "https://soundcloud.com",
         "https://spotify.com",
-        "https://xda-developers.com",
-        "https://z.ai"
+        "https://xda-developers.com"
       ],
       "Locked": true
     },
-	"Homepage": {
-      "URL": "https://github.com/search?q=&type=repositories",
-      "Locked": true,
-      "StartPage": "none"
+  "Homepage": {
+    "URL": "https://github.com/search?q=&type=repositories",
+    "Locked": true,
+    "StartPage": "none"
     },
 	"SearchEngines": {
 	"PreventInstalls": false,
@@ -113,7 +111,7 @@
     }
 	]
 	},
-	"UserMessaging": {
+  "UserMessaging": {
       "ExtensionRecommendations": false,
       "FeatureRecommendations": false,
       "UrlbarInterventions": false,
@@ -122,7 +120,7 @@
       "FirefoxLabs": false,
       "Locked": true
     },
-	"FirefoxHome": {
+  "FirefoxHome": {
       "Search": false,
       "TopSites": false,
       "SponsoredTopSites": false,
@@ -133,25 +131,25 @@
       "SponsoredStories": false,
       "Locked": true
     },
-	"FirefoxSuggest": {
+  "FirefoxSuggest": {
       "WebSuggestions": true,
       "SponsoredSuggestions": false,
       "ImproveSuggest": false,
       "Locked": true
     },
-	"NoDefaultBookmarks": true,
-	"DisableFirefoxStudies": true,
-	"HttpsOnlyMode": "force_enabled",
-	"HttpAllowlist": ["http://httpforever.com/"],
-	"PromptForDownloadLocation": true,
-	"DontCheckDefaultBrowser": true,
-	"DisableTelemetry": true,
+  "NoDefaultBookmarks": true,
+  "DisableFirefoxStudies": true,
+  "HttpsOnlyMode": "force_enabled",
+  "HttpAllowlist": ["http://httpforever.com/"],
+  "PromptForDownloadLocation": true,
+  "DontCheckDefaultBrowser": true,
+  "DisableTelemetry": true,
   "DisableAppUpdate": true,
-	"BackgroundAppUpdate": false,
-	"ManualAppUpdateOnly": true,
-	"DisableFirefoxAccounts": true,
-	"WindowsSSO": false,
-	"PasswordManagerEnabled": false,
+  "BackgroundAppUpdate": false,
+  "ManualAppUpdateOnly": true,
+  "DisableFirefoxAccounts": true,
+  "WindowsSSO": false,
+  "PasswordManagerEnabled": false,
 	"Permissions": {
       "Camera": {
         "Allow": ["https://example.com"],
@@ -177,7 +175,7 @@
         "Locked": true
       },
       "VirtualReality": {
-				"Allow": ["https://example.com"],
+        "Allow": ["https://example.com"],
         "BlockNewRequests": true,
         "Locked": true
       },
@@ -187,7 +185,7 @@
         "Locked": true
       }
     },
-	"EnableTrackingProtection": {
+  "EnableTrackingProtection": {
       "Value": true,
       "Locked": true,
       "Cryptomining": true,
@@ -199,34 +197,34 @@
       "BaselineExceptions": false,
       "ConvenienceExceptions": false
     },
-	"Preferences": {
-		"browser.download.useDownloadDir": {
-			"Value": false,
-			"Status": "locked"
+  "Preferences": {
+    "browser.download.useDownloadDir": {
+      "Value": false,
+      "Status": "locked"
 		},
-		"browser.download.panel.shown": {
-			"Value": true,
-			"Status": "locked"
+  "browser.download.panel.shown": {
+      "Value": true,
+      "Status": "locked"
 		},
-		"browser.download.lastDir": {
-			"Value": "",
-			"Status": "locked"
+  "browser.download.lastDir": {
+      "Value": "",
+      "Status": "locked"
 		},
-		"browser.urlbar.suggest.recentsearches": {
-			"Value": false,
-			"Status": "locked"
+  "browser.urlbar.suggest.recentsearches": {
+      "Value": false,
+      "Status": "locked"
 		},
-		"geo.enabled": {
-			"Value": false,
-			"Status": "locked"
+  "geo.enabled": {
+      "Value": false,
+      "Status": "locked"
 		},
-		"geo.prompt.open_system_prefs": {
-			"Value": false,
-			"Status": "locked"
+  "geo.prompt.open_system_prefs": {
+      "Value": false,
+      "Status": "locked"
 		},
-		"geo.provider.ms-windows-location": {
-			"Value": false,
-			"Status": "locked"
+  "geo.provider.ms-windows-location": {
+      "Value": false,
+      "Status": "locked"
 		}
     }
   }
