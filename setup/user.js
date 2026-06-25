@@ -1,4 +1,15 @@
 //
+user_pref("sidebar.revamp", false)
+
+
+//
+user_pref("browser.ai.control.default", "blocked")
+user_pref("browser.ai.control.pdfjsAltText", "blocked")
+user_pref("browser.ai.control.translations", "blocked")
+user_pref("extensions.ml.enabled", false)
+user_pref("pdfjs.enableAltText", false)
+
+//
 user_pref("browser.translations.automaticallyPopup", false);
 
 //
@@ -461,3 +472,10 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 
 // Telemetry: Set telemetry server to a null location to prevent data sending.
 user_pref("toolkit.telemetry.server", "data:,");
+
+
+user_pref("app.update.background.allowUpdatesForUnelevatedInstallations", false)
+user_pref("browser.newtabpage.activity-stream.discoverystream.merino-provider.ohttp.enabled", false)
+user_pref("browser.newtabpage.activity-stream.discoverystream.sections.personalization.inferred.enabled", false)
+user_pref("browser.newtabpage.activity-stream.telemetry.privatePing.inferredInterests.enabled", false)
+user_pref("nimbus.rollouts.enabled", false)

@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.19",
+    "version": "13.6.23",
     "knownCapabilities": [
       "script",
       "object",
