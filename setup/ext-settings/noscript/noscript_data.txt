@@ -140,6 +140,7 @@
         "§:codelinaro.org",
         "§:consultant.ru",
         "§:continuwuity.org",
+        "§:conventionalcommits.org",
         "§:coredns.io",
         "§:corsair.com",
         "§:couchsurfing.com",
