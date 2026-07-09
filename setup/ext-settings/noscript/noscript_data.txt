@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.27",
+    "version": "13.6.29",
     "knownCapabilities": [
       "script",
       "object",
@@ -176,6 +176,7 @@
         "§:documentfoundation.org",
         "§:downdetector.com",
         "§:duckduckgo.com",
+        "§:e.foundation",
         "§:electronjs.org",
         "§:element.io",
         "§:ely.by",
@@ -423,6 +424,7 @@
         "§:ping.pe",
         "§:pinimg.com",
         "§:pinterest.com",
+        "§:pixelexperience.org",
         "§:pixiv.net",
         "§:pixlr.com",
         "§:pkgforge.dev",

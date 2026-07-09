@@ -1,4 +1,4 @@
-# version 1.2.2
+# version 1.2.4
 
 param(
     [Parameter(Position=0, Mandatory=$false)]
@@ -11,7 +11,7 @@ param(
 if ([string]::IsNullOrWhiteSpace($InputFile)) {
     Write-Host ""
     Write-Host "Error: Input file not specified." -ForegroundColor Red
-    Write-Host "Usage: .\sort-noscript-domains.ps1 <input_json_path> [output_file_path]"
+    Write-Host "Usage: .\sort-noscript-domains.ps1 <input_json_path> [output_file_path]" -ForegroundColor Yellow
     Write-Host ""
     exit 1
 }
@@ -32,9 +32,9 @@ else {
 if ($null -eq $resolvedInputPath) {
     Write-Host ""
     Write-Host "Error: Input file not found." -ForegroundColor Red
-    Write-Host "Tried looking for: $InputFile"
+    Write-Host "Tried looking for: $InputFile" -ForegroundColor Yellow
     Write-Host ""
-    exit 1
+    exit 2
 }
 
 $jqPath = Join-Path $PSScriptRoot "jq.exe"
@@ -45,8 +45,10 @@ if (-not (Test-Path $jqPath)) {
 if (-not $jqPath) {
     Write-Host ""
     Write-Host "Error: jq.exe not found." -ForegroundColor Red
-    Write-Host "Please download jq.exe and place it in the script folder or system PATH."
-    exit 1
+    Write-Host "Please download jq.exe and place it in the script folder or system PATH." -ForegroundColor Yellow
+    Write-Host ""
+    $null = Read-Host
+    exit 2
 }
 
 try {
@@ -63,6 +65,7 @@ try {
     $outputString = (& $jqPath -r --arg s "$separator" $jqFilter $resolvedInputPath) -join "`n"
 
     if ([string]::IsNullOrWhiteSpace($outputString)) {
+        Write-Host ""
         Write-Host "Trusted sites list is empty. Nothing to process." -ForegroundColor Yellow
         Write-Host ""
         exit 0
@@ -73,21 +76,25 @@ try {
         Write-Host ""
         Write-Output $outputString
         Write-Output ""
-        
         Set-Clipboard -Value $outputString
+        $null = Read-Host
+        exit 0
     }
     else {
         $resolvedOutputPath = $OutputFile
         if (-not [System.IO.Path]::IsPathRooted($OutputFile)) {
             $resolvedOutputPath = Join-Path -Path $PSScriptRoot -ChildPath $OutputFile
         }
+
         $resolvedOutputPath = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($resolvedOutputPath)
 
         $utf8NoBom = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllText($resolvedOutputPath, $outputString, $utf8NoBom)
-        
+
+        Write-Host ""
         Write-Host "Done. Sorted list saved to: $resolvedOutputPath" -ForegroundColor Green
         Write-Host ""
+        exit 0
     }
 }
 catch {

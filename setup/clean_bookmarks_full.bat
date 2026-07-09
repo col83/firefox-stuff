@@ -1,7 +1,15 @@
-powershell -NoProfile -ExecutionPolicy Bypass -File "clean_bookmarks_full.ps1" "bookmarks.html"
+REM version 1.2
 
+@echo off
+
+set "BOOKMARKS_FILE=1bookmarks.html"
+set "BOOKMARKS_CLEANER_SCRIPT=clean_bookmarks_full.ps1"
 set "EDITOR=%ProgramFiles%\Notepad++\notepad++.exe"
 
-if exist "%EDITOR%" (
-    start "" "%EDITOR%" "bookmarks.html"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%BOOKMARKS_CLEANER_SCRIPT%" "%BOOKMARKS_FILE%"
+
+if %ERRORLEVEL% equ 0 (
+    if exist "%EDITOR%" (
+        start "" "%EDITOR%" "%BOOKMARKS_FILE%"
+    )
 )
