@@ -2,7 +2,7 @@ REM version 1.2
 
 @echo off
 
-set "BOOKMARKS_FILE=1bookmarks.html"
+set "BOOKMARKS_FILE=bookmarks.html"
 set "BOOKMARKS_CLEANER_SCRIPT=clean_bookmarks_full.ps1"
 set "EDITOR=%ProgramFiles%\Notepad++\notepad++.exe"
 
