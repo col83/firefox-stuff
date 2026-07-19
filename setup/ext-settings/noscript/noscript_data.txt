@@ -126,6 +126,7 @@
         "§:chatglm.cn",
         "§:chatgpt.com",
         "§:chocolatey.org",
+        "§:chromium.org",
         "§:chromiumdash.appspot.com",
         "§:cisco.com",
         "§:claude.ai",
