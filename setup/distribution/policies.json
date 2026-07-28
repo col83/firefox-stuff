@@ -1,58 +1,63 @@
 {
   "policies": {
-	"ExtensionSettings": {
+    "ExtensionSettings": {
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4889993/noscript-13.6.29.xpi",
-				"private_browsing": ""
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4908823/noscript-13.6.31.xpi",
+        "private_browsing": ""
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.72.2/uBlock0_1.72.2.firefox.signed.xpi",
-				"private_browsing": ""
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.72.3rc2/uBlock0_1.72.3rc2.firefox.signed.xpi",
+        "private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4637154/istilldontcareaboutcookies-1.1.9.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
-			"{6c00218c-707a-4977-84cf-36df1cef310f}": {
+      "{6c00218c-707a-4977-84cf-36df1cef310f}": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4516988/port_authority-2.2.0.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
-			"jid1-BoFifL9Vbdl2zQ@jetpack": {
+      "jid1-BoFifL9Vbdl2zQ@jetpack": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/file/4785399/decentraleyes-3.0.1.xpi",
-				"private_browsing": ""
+        "private_browsing": ""
       },
       "sponsorBlockerBETA@ajay.app": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.6/FirefoxSignedInstaller.xpi",
-				"private_browsing": ""
+        "install_url": "https://github.com/ajayyy/SponsorBlock/releases/download/6.1.7/FirefoxSignedInstaller.xpi",
+        "private_browsing": ""
+      },
+      "{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4920035/refined_github-26.7.26.xpi",
+        "private_browsing": ""
       }
     },
-	"ExtensionUpdate": false,
-	"SanitizeOnShutdown": {
-		"Cache": true,
-		"Cookies": true,
-		"FormData": false,
-		"History": false,
-		"Sessions": false,
-		"SiteSettings": true,
-		"Locked": true
-	},
-	"GenerativeAI": {
-    "Enabled": false,
-    "Chatbot": false,
-    "LinkPreviews": false,
-    "TabGroups": false,
-    "Locked": true
+    "ExtensionUpdate": false,
+    "SanitizeOnShutdown": {
+      "Cache": true,
+      "Cookies": true,
+      "FormData": false,
+      "History": false,
+      "Sessions": false,
+      "SiteSettings": true,
+      "Locked": true
     },
-  "Cookies": {
-		"Behavior": "reject-tracker-and-partition-foreign",
-			"Allow": [
-				"https://4pda.to",
+    "GenerativeAI": {
+      "Enabled": false,
+      "Chatbot": false,
+      "LinkPreviews": false,
+      "TabGroups": false,
+      "Locked": true
+    },
+    "Cookies": {
+      "Behavior": "reject-tracker-and-partition-foreign",
+      "Allow": [
+        "https://4pda.to",
         "https://archlinux.org",
         "https://chatgpt.com",
         "https://duckduckgo.com",
@@ -62,63 +67,62 @@
         "https://proton.me",
         "https://soundcloud.com",
         "https://spotify.com",
-        "https://xda-developers.com",
-        "https://z.ai"
+        "https://xda-developers.com"
       ],
       "Locked": true
     },
-	"Homepage": {
+    "Homepage": {
       "URL": "https://github.com/search?q=&type=repositories",
       "Locked": true,
       "StartPage": "none"
     },
-	"SearchEngines": {
-	"PreventInstalls": false,
-	"Default": "DuckDuckGo",
-	"Add": [
-    {
-      "Name": "Youtube",
-      "URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}",
-      "Method": "GET",
-      "IconURL": "https://www.youtube.com/favicon.ico",
-      "Alias": "@yt",
-      "Description": "Youtube Search",
-      "PostData": "",
-      "SuggestURLTemplate": ""
+    "SearchEngines": {
+      "PreventInstalls": false,
+      "Default": "DuckDuckGo",
+      "Add": [
+        {
+          "Name": "Youtube",
+          "URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}",
+          "Method": "GET",
+          "IconURL": "https://www.youtube.com/favicon.ico",
+          "Alias": "@yt",
+          "Description": "Youtube Search",
+          "PostData": "",
+          "SuggestURLTemplate": ""
+        },
+        {
+          "Name": "Arch Linux packages search",
+          "URLTemplate": "https://archlinux.org/packages/?sort=-last_update&q={searchTerms}&maintainer=&flagged=",
+          "Method": "GET",
+          "IconURL": "https://archlinux.org/favicon.ico",
+          "Alias": "@aps",
+          "Description": "Search packages via Arch Linux repository",
+          "PostData": "",
+          "SuggestURLTemplate": ""
+        },
+        {
+          "Name": "Github",
+          "URLTemplate": "https://github.com/search?q={searchTerms}&type=repositories",
+          "Method": "GET",
+          "IconURL": "https://github.com/favicon.ico",
+          "Alias": "@gh",
+          "Description": "Github search",
+          "PostData": "",
+          "SuggestURLTemplate": ""
+        },
+        {
+          "Name": "Steam",
+          "URLTemplate": "https://store.steampowered.com/search?term={searchTerms}",
+          "Method": "GET",
+          "IconURL": "https://store.steampowered.com/favicon.ico",
+          "Alias": "@steam",
+          "Description": "Steam search",
+          "PostData": "",
+          "SuggestURLTemplate": ""
+        }
+      ]
     },
-    {
-      "Name": "Arch Linux packages search",
-      "URLTemplate": "https://archlinux.org/packages/?sort=-last_update&q={searchTerms}&maintainer=&flagged=",
-      "Method": "GET",
-      "IconURL": "https://archlinux.org/favicon.ico",
-      "Alias": "@aps",
-      "Description": "Search packages via Arch Linux repository",
-      "PostData": "",
-      "SuggestURLTemplate": ""
-    },
-    {
-      "Name": "Github",
-      "URLTemplate": "https://github.com/search?q={searchTerms}&type=repositories",
-      "Method": "GET",
-      "IconURL": "https://github.com/favicon.ico",
-      "Alias": "@gh",
-      "Description": "Github search",
-      "PostData": "",
-      "SuggestURLTemplate": ""
-    },
-    {
-      "Name": "Steam",
-      "URLTemplate": "https://store.steampowered.com/search?term={searchTerms}",
-      "Method": "GET",
-      "IconURL": "https://store.steampowered.com/favicon.ico",
-      "Alias": "@steam",
-      "Description": "Steam search",
-      "PostData": "",
-      "SuggestURLTemplate": ""
-    }
-	]
-	},
-	"UserMessaging": {
+    "UserMessaging": {
       "ExtensionRecommendations": false,
       "FeatureRecommendations": false,
       "UrlbarInterventions": false,
@@ -127,7 +131,7 @@
       "FirefoxLabs": false,
       "Locked": true
     },
-	"FirefoxHome": {
+    "FirefoxHome": {
       "Search": false,
       "TopSites": false,
       "SponsoredTopSites": false,
@@ -138,33 +142,39 @@
       "SponsoredStories": false,
       "Locked": true
     },
-	"FirefoxSuggest": {
+    "FirefoxSuggest": {
       "WebSuggestions": true,
       "SponsoredSuggestions": false,
       "ImproveSuggest": false,
       "Locked": true
     },
-	"NoDefaultBookmarks": true,
-	"DisableFirefoxStudies": true,
-	"HttpsOnlyMode": "force_enabled",
-	"HttpAllowlist": ["http://httpforever.com/"],
-	"PromptForDownloadLocation": true,
-	"DontCheckDefaultBrowser": true,
-	"DisableTelemetry": true,
-  "DisableAppUpdate": true,
-	"BackgroundAppUpdate": false,
-	"ManualAppUpdateOnly": true,
-	"DisableFirefoxAccounts": true,
-	"WindowsSSO": false,
-	"PasswordManagerEnabled": false,
-	"Permissions": {
+    "NoDefaultBookmarks": true,
+    "DisableFirefoxStudies": true,
+    "HttpsOnlyMode": "force_enabled",
+    "HttpAllowlist": [
+      "http://httpforever.com/"
+    ],
+    "PromptForDownloadLocation": true,
+    "DontCheckDefaultBrowser": true,
+    "DisableTelemetry": true,
+    "DisableAppUpdate": true,
+    "BackgroundAppUpdate": false,
+    "ManualAppUpdateOnly": true,
+    "DisableFirefoxAccounts": true,
+    "WindowsSSO": false,
+    "PasswordManagerEnabled": false,
+    "Permissions": {
       "Camera": {
-        "Allow": ["https://example.com"],
+        "Allow": [
+          "https://example.com"
+        ],
         "BlockNewRequests": false,
         "Locked": true
       },
       "Microphone": {
-        "Allow": ["https://example.com"],
+        "Allow": [
+          "https://example.com"
+        ],
         "BlockNewRequests": false,
         "Locked": true
       },
@@ -177,22 +187,30 @@
         "Locked": true
       },
       "Autoplay": {
-        "Allow": ["https://bandcamp.com", "https://soundcloud.com", "https://spotify.com"],
+        "Allow": [
+          "https://bandcamp.com",
+          "https://soundcloud.com",
+          "https://spotify.com"
+        ],
         "Default": "block-audio-video",
         "Locked": true
       },
       "VirtualReality": {
-				"Allow": ["https://example.com"],
+        "Allow": [
+          "https://example.com"
+        ],
         "BlockNewRequests": true,
         "Locked": true
       },
       "ScreenShare": {
-        "Allow": ["https://example.com"],
+        "Allow": [
+          "https://example.com"
+        ],
         "BlockNewRequests": true,
         "Locked": true
       }
     },
-	"EnableTrackingProtection": {
+    "EnableTrackingProtection": {
       "Value": true,
       "Locked": true,
       "Cryptomining": true,
@@ -200,39 +218,41 @@
       "EmailTracking": true,
       "SuspectedFingerprinting": true,
       "Category": "strict",
-      "Exceptions": ["https://example.com"],
+      "Exceptions": [
+        "https://example.com"
+      ],
       "BaselineExceptions": false,
       "ConvenienceExceptions": false
     },
-	"Preferences": {
-		"browser.download.useDownloadDir": {
-			"Value": false,
-			"Status": "locked"
-		},
-		"browser.download.panel.shown": {
-			"Value": true,
-			"Status": "locked"
-		},
-		"browser.download.lastDir": {
-			"Value": "",
-			"Status": "locked"
-		},
-		"browser.urlbar.suggest.recentsearches": {
-			"Value": false,
-			"Status": "locked"
-		},
-		"geo.enabled": {
-			"Value": false,
-			"Status": "locked"
-		},
-		"geo.prompt.open_system_prefs": {
-			"Value": false,
-			"Status": "locked"
-		},
-		"geo.provider.ms-windows-location": {
-			"Value": false,
-			"Status": "locked"
-		}
+    "Preferences": {
+      "browser.download.useDownloadDir": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "browser.download.panel.shown": {
+        "Value": true,
+        "Status": "locked"
+      },
+      "browser.download.lastDir": {
+        "Value": "",
+        "Status": "locked"
+      },
+      "browser.urlbar.suggest.recentsearches": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "geo.enabled": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "geo.prompt.open_system_prefs": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "geo.provider.ms-windows-location": {
+        "Value": false,
+        "Status": "locked"
+      }
     }
   }
 }
