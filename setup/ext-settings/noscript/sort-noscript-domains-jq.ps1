@@ -1,4 +1,4 @@
-# version 1.2.4
+# version 1.2.11
 
 param(
     [Parameter(Position=0, Mandatory=$false)]
@@ -10,10 +10,12 @@ param(
 
 if ([string]::IsNullOrWhiteSpace($InputFile)) {
     Write-Host ""
-    Write-Host "Error: Input file not specified." -ForegroundColor Red
-    Write-Host "Usage: .\sort-noscript-domains.ps1 <input_json_path> [output_file_path]" -ForegroundColor Yellow
+    Write-Host "Input file not specified." -ForegroundColor Red
     Write-Host ""
-    exit 1
+    Write-Host "Usage: $($MyInvocation.MyCommand.Name) [input_file_path] [output_file_path]" -ForegroundColor Yellow
+    Write-Host "Example: $($MyInvocation.MyCommand.Name) noscript_data.txt sorted.txt"
+    Write-Host ""
+    exit 0
 }
 
 $resolvedInputPath = $null
@@ -38,16 +40,21 @@ if ($null -eq $resolvedInputPath) {
 }
 
 $jqPath = Join-Path $PSScriptRoot "jq.exe"
-if (-not (Test-Path $jqPath)) {
-    $jqPath = (Get-Command jq -ErrorAction SilentlyContinue).Source
+if (-not (Test-Path $jqPath -PathType Leaf)) {
+    $jqCommand = Get-Command jq -ErrorAction SilentlyContinue
+    if ($jqCommand) {
+        $jqPath = $jqCommand.Source
+    } else {
+        $jqPath = $null
+    }
 }
 
-if (-not $jqPath) {
+if ([string]::IsNullOrEmpty($jqPath)) {
     Write-Host ""
-    Write-Host "Error: jq.exe not found." -ForegroundColor Red
-    Write-Host "Please download jq.exe and place it in the script folder or system PATH." -ForegroundColor Yellow
+    Write-Host "Error: jq not found." -ForegroundColor Red
+    Write-Host "Download from: https://jqlang.org/download/ and place it in the script folder or system PATH." -ForegroundColor Yellow
     Write-Host ""
-    $null = Read-Host
+    if ($Host.Name -eq 'ConsoleHost') { $null = Read-Host }
     exit 2
 }
 
@@ -64,6 +71,14 @@ try {
     # jq executing
     $outputString = (& $jqPath -r --arg s "$separator" $jqFilter $resolvedInputPath) -join "`n"
 
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "Error: jq failed (exit code $LASTEXITCODE)." -ForegroundColor Red
+        Write-Host ($outputString | Out-String) -ForegroundColor Yellow
+        Write-Host ""
+        exit 3
+    }
+
     if ([string]::IsNullOrWhiteSpace($outputString)) {
         Write-Host ""
         Write-Host "Trusted sites list is empty. Nothing to process." -ForegroundColor Yellow
@@ -76,17 +91,16 @@ try {
         Write-Host ""
         Write-Output $outputString
         Write-Output ""
-        Set-Clipboard -Value $outputString
-        $null = Read-Host
+        if ($Host.Name -eq 'ConsoleHost') {
+            try { Set-Clipboard -Value $outputString } catch { Write-Host "(Clipboard not available)" -ForegroundColor DarkGray }
+            $null = Read-Host
+        }
         exit 0
     }
     else {
         $resolvedOutputPath = $OutputFile
-        if (-not [System.IO.Path]::IsPathRooted($OutputFile)) {
-            $resolvedOutputPath = Join-Path -Path $PSScriptRoot -ChildPath $OutputFile
-        }
-
-        $resolvedOutputPath = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($resolvedOutputPath)
+        if (-not [System.IO.Path]::IsPathRooted($OutputFile)) { $resolvedOutputPath = Join-Path -Path $PSScriptRoot -ChildPath $OutputFile }
+        $resolvedOutputPath = [System.IO.Path]::GetFullPath($resolvedOutputPath)
 
         $utf8NoBom = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllText($resolvedOutputPath, $outputString, $utf8NoBom)
@@ -99,6 +113,6 @@ try {
 }
 catch {
     Write-Error "A critical error occurred."
-    Write-Error "Details: $_"
+    Write-Error $_.Exception.Message
     exit 1
 }
