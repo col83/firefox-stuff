@@ -1,14 +1,23 @@
 {
   "policies": {
+    "SkipTermsOfUse": true,
     "ExtensionSettings": {
+      "*": {
+        "installation_mode": "blocked"
+      },
+      "@testpilot-containers": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4867303/multi_account_containers-8.3.8.xpi",
+        "private_browsing": ""
+      },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4908823/noscript-13.6.31.xpi",
+        "install_url": "https://github.com/hackademix/noscript/releases/download/13.6.31.902/noscript-13.6.31.902.xpi",
         "private_browsing": ""
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.72.3rc2/uBlock0_1.72.3rc2.firefox.signed.xpi",
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.73.1b0/uBlock0_1.73.1b0.firefox.signed.xpi",
         "private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
@@ -101,6 +110,16 @@
           "SuggestURLTemplate": ""
         },
         {
+          "Name": "Ubuntu packages search",
+          "URLTemplate": "https://packages.ubuntu.com/search?keywords={searchTerms}&searchon=names&suite=all&section=all",
+          "Method": "GET",
+          "IconURL": "https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png",
+          "Alias": "@ups",
+          "Description": "Search packages via ubuntu repository",
+          "PostData": "",
+          "SuggestURLTemplate": ""
+        },
+        {
           "Name": "Github",
           "URLTemplate": "https://github.com/search?q={searchTerms}&type=repositories",
           "Method": "GET",
@@ -140,6 +159,8 @@
       "Stories": false,
       "SponsoredPocket": false,
       "SponsoredStories": false,
+      "Snippets": false,
+      "Weather": false,
       "Locked": true
     },
     "FirefoxSuggest": {
