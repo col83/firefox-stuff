@@ -12,12 +12,12 @@
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/hackademix/noscript/releases/download/13.6.31.902/noscript-13.6.31.902.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4968026/noscript-13.6.32.xpi",
         "private_browsing": ""
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.73.1b0/uBlock0_1.73.1b0.firefox.signed.xpi",
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.73.1b4/uBlock0_1.73.1b4.firefox.signed.xpi",
         "private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
@@ -32,7 +32,7 @@
       },
       "jid1-BoFifL9Vbdl2zQ@jetpack": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4785399/decentraleyes-3.0.1.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4943310/decentraleyes-3.0.2.xpi",
         "private_browsing": ""
       },
       "sponsorBlockerBETA@ajay.app": {
