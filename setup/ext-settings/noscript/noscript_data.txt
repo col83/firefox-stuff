@@ -171,6 +171,7 @@
         "§:dev.to",
         "§:deviantart.com",
         "§:deviantart.net",
+        "§:die.net",
         "§:digitalfoundry.net",
         "§:digitalocean.com",
         "§:digitimes.com",
