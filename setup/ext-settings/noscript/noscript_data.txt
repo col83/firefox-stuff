@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.32",
+    "version": "13.6.33",
     "knownCapabilities": [
       "script",
       "object",
@@ -33,8 +33,6 @@
         "media",
         "frame",
         "font",
-        "wasm",
-        "webgl",
         "fetch",
         "noscript",
         "unchecked_css"
@@ -671,7 +669,7 @@
   "sync": {
     "global": false,
     "xss": true,
-    "TabGuardMode": "off",
+    "TabGuardMode": "incognito",
     "TabGuardPrompt": "post",
     "cascadePermissions": true,
     "cascadeRestrictions": true,
