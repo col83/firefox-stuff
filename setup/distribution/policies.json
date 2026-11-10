@@ -7,17 +7,17 @@
       },
       "@testpilot-containers": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4867303/multi_account_containers-8.3.8.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/5168122/multi_account_containers-8.4.0.xpi",
         "private_browsing": ""
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/5028324/noscript-13.6.33.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/5229642/noscript-13.6.38.xpi",
         "private_browsing": ""
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.75.0/uBlock0_1.75.0.firefox.signed.xpi",
+        "install_url": "https://github.com/gorhill/uBlock/releases/download/1.76.1b0/uBlock0_1.76.1b0.firefox.signed.xpi",
         "private_browsing": ""
       },
       "idcac-pub@guus.ninja": {
@@ -42,7 +42,7 @@
       },
       "{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}": {
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/file/4920035/refined_github-26.7.26.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/file/5216077/refined_github-26.11.6.xpi",
         "private_browsing": ""
       }
     },
