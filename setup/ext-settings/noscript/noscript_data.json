@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.38",
+    "version": "13.6.39",
     "knownCapabilities": [
       "script",
       "object",
@@ -32,12 +32,10 @@
         "object",
         "media",
         "frame",
-        "font",
         "fetch",
         "noscript",
         "unchecked_css",
-        "webgl",
-        "wasm"
+        "other"
       ],
       "temp": false
     },
@@ -119,6 +117,7 @@
         "§:broadcom.com",
         "§:browserbench.org",
         "§:browserleaks.com",
+        "§:browserleaks.org",
         "§:bsky.app",
         "§:bstatic.com",
         "§:bun.com",
@@ -467,6 +466,7 @@
         "§:perl.org",
         "§:phoronix.com",
         "§:photonengine.com",
+        "§:php.net",
         "§:pi-hole.net",
         "§:ping.pe",
         "§:pinimg.com",
@@ -579,6 +579,7 @@
         "§:tpucdn.com",
         "§:translate.googleapis.com",
         "§:translationproject.org",
+        "§:trinitydesktop.org",
         "§:trudvsem.ru",
         "§:twimg.com",
         "§:twitch.tv",
@@ -681,9 +682,7 @@
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "autoReload": true,
-    "gestureEnabled": false,
-    "storage": "local",
-    "uuid": ""
+    "gestureEnabled": false
   },
   "sync": {
     "global": false,
@@ -692,8 +691,7 @@
     "TabGuardPrompt": "post",
     "cascadePermissions": false,
     "cascadeRestrictions": true,
-    "overrideTorBrowserPolicy": false,
-    "storage": "sync"
+    "overrideTorBrowserPolicy": false
   },
   "xssUserChoices": {}
 }
